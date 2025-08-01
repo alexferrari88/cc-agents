@@ -9,21 +9,27 @@ This collection provides production-ready agents that handle the complete softwa
 ## 📁 Agent Categories
 
 ### 🏗️ Architecture & Planning
+
 - **[spec-driven-architect](spec-driven-architect.md)** - Ensures proper specification-driven development by creating detailed specs before implementation begins
 - **[decision-coordinator](consensus/decision-coordinator.md)** - Orchestrates multi-agent decision-making for complex architectural choices and technical decisions
 
 ### 🔍 Quality Assurance
+
 - **[code-quality-enforcer](code-quality-enforcer.md)** - Maintains code quality through automated formatting, linting, type checking, and testing
 - **[test-maintainer](test-maintainer.md)** - Ensures comprehensive test coverage and maintains test suite integrity after development tasks
 
 ### 📚 Documentation & Sync
+
 - **[docs-sync-checker](docs-sync-checker.md)** - Keeps documentation synchronized with codebase changes, especially CLAUDE.md files
 
 ### 🌐 Research & Intelligence
+
 - **[web-research-specialist](web-research-specialist.md)** - Conducts targeted web research for current information beyond Claude's training data
 
 ### 🤝 Consensus System
+
 A sophisticated multi-agent decision-making framework:
+
 - **[consensus-judge](consensus/consensus-judge.md)** - Evaluates proposals and makes final decisions using context-appropriate consensus mechanisms
 - **[pragmatic-proposer](consensus/pragmatic-proposer.md)** - Generates practical, immediately implementable solutions
 - **[quality-proposer](consensus/quality-proposer.md)** - Focuses on robustness, maintainability, and long-term sustainability
@@ -35,13 +41,20 @@ A sophisticated multi-agent decision-making framework:
 
 ### Installation
 
-1. Copy the desired agent files to your Claude Code agents directory:
+1. Clone the repository and copy agent files to your Claude Code agents directory:
+
    ```bash
+   # Clone the repository
+   git clone https://github.com/alexferrari88/cc-agents.git
+   
    # For project-specific agents
-   cp -r agents/ /path/to/your/project/.claude/agents/
+   cp -r cc-agents/*.md cc-agents/consensus/ /path/to/your/project/.claude/agents/
    
    # For user-global agents
-   cp -r agents/ ~/.claude/agents/
+   cp -r cc-agents/*.md cc-agents/consensus/ ~/.claude/agents/
+   
+   # Clean up
+   rm -rf cc-agents/
    ```
 
 2. Restart Claude Code or run `/agents` to verify installation
@@ -53,7 +66,8 @@ Agents can be used in two ways:
 **Automatic Activation**: Claude Code will automatically use appropriate agents based on context and task requirements.
 
 **Explicit Invocation**: Request specific agents directly:
-```
+
+```md
 Use the code-quality-enforcer agent to check my recent changes
 Use the spec-driven-architect agent to plan this new feature
 Use the test-maintainer agent to update test coverage
@@ -83,6 +97,7 @@ For complex decisions, the consensus system provides structured evaluation:
 ### Tool Access
 
 Each agent is configured with specific tool access appropriate to its role:
+
 - Planning agents: Read, Grep, Glob for analysis
 - Quality agents: Full toolset including Bash for execution
 - Research agents: Web tools and documentation access
@@ -91,6 +106,7 @@ Each agent is configured with specific tool access appropriate to its role:
 ### Customization
 
 Agents can be customized by editing their markdown files:
+
 - Modify the `description` field to change activation criteria
 - Update system prompts to adjust behavior
 - Modify `tools` field to change permitted operations
@@ -98,6 +114,7 @@ Agents can be customized by editing their markdown files:
 ## 📊 Quality Standards
 
 All agents follow consistent principles:
+
 - **Systematic Workflows**: Each agent follows a defined multi-phase process
 - **Error Handling**: Comprehensive error detection and recovery
 - **Communication**: Clear progress updates and status reporting
@@ -106,12 +123,14 @@ All agents follow consistent principles:
 ## 🎯 Best Practices
 
 ### Agent Selection
+
 - Use **code-quality-enforcer** after any significant code changes
 - Invoke **test-maintainer** when implementing new features
 - Use **spec-driven-architect** for any new feature or significant modification
 - Deploy **decision-coordinator** for architectural decisions or complex trade-offs
 
 ### Workflow Integration
+
 1. Plan with `spec-driven-architect` before major implementations
 2. Make complex decisions using the consensus system
 3. Enforce quality with `code-quality-enforcer` after changes
