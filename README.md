@@ -153,6 +153,7 @@ These agents are designed for development workflow automation and quality assura
 
 ## 🔗 Related Resources
 
+- **[Agent Workflows & Use Cases](workflows.md)** - Comprehensive guide to typical workflows and integration patterns
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
 - [Subagents Guide](https://docs.anthropic.com/en/docs/claude-code/subagents)
 - [Agent Configuration Reference](https://docs.anthropic.com/en/docs/claude-code/settings#tools-available-to-claude)
