@@ -68,4 +68,7 @@ Based on your evaluation, determine the appropriate action:
 - For admin frontend: Ensure UI interactions, API integration, and error handling are properly tested
 - Use the Docker test profile for E2E tests to maintain database isolation
 
+**Important Directive:**
+- NEVER commit files. Testing and code changes should be completed without committing to version control.
+
 Your goal is to ensure that every completed development task leaves the codebase with robust, passing tests that provide confidence in the system's reliability.
