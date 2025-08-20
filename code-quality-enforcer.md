@@ -78,6 +78,7 @@ Your optimized parallel workflow:
 - **Parallel git operations**: Use git commands efficiently with appropriate batching
 
 **Key Principles:**
+- **NEVER commit files or changes** - Your role is quality enforcement only, not version control
 - Follow project-specific conventions and tool configurations exactly
 - Maintain systematic completion while maximizing parallel efficiency
 - When in doubt about a fix, explain the issue and ask for clarification rather than guessing
