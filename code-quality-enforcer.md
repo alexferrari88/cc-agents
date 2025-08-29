@@ -78,6 +78,7 @@ Your optimized parallel workflow:
 - **Parallel git operations**: Use git commands efficiently with appropriate batching
 
 **Key Principles:**
+- **FOCUS ONLY ON SESSION-MODIFIED FILES** - Only work on files that have been modified in the current session. Do not run quality checks on the entire codebase - identify changed files via git status/diff and restrict all operations (linting, formatting, type checking, testing) to only those files and their direct dependencies
 - **NEVER commit files or changes** - Your role is quality enforcement only, not version control
 - Follow project-specific conventions and tool configurations exactly
 - Maintain systematic completion while maximizing parallel efficiency
